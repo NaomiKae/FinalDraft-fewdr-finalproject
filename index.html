@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <link rel="stylesheet" href="https://use.typekit.net/boj3cbp.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!----<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+    <title></title>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  
+  </style>
+
+  <body>
+    <!--header section-->
+    <div id="main">
+    <header class="tetue-header" id="myHeader">
+      <div class="tetue-logo-container">
+        <img class="social-media-icons" />
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Shop</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Who We Are</a>
+          <a href="#">About Process</a>
+          <a href="#">Contact</a>
+        </div>
+        <span onclick="openNav()">
+        <div class="hamburger-menu" id="menu-trigger">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg"
+            alt="Hamburger icon"
+          />
+        </div>
+      </span>
+      </div>
+      <nav class="tetue-nav">
+      
+        <div class="tetue-nav-element">my account</div>
+        
+      </nav>
+    </header>
+    <!--side menu 
+      <aside class="side-menu-position side-menu-design" id="side-menu">
+        <header class="side-menu-header">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/x.svg" alt="Close this menu" id="menu-close">
+        </header>
+        <ul class="side-menu-content">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Tutorials</li>
+          <li>About Us</li>
+        </ul>
+      </aside>
+      <!--hero section-->
+    <section class="tetue-main-photo image-mask-darken" id="coverPhoto">
+      <div class="tetue-intro-content">
+      <h1 class="tetue-intro-title">t&#234;tue.</h1>
+      <div class="shop-now-button">Shop now</div>
+    </div>
+      
+    </div>
+    </section>
+    <!--Handmade Headwrap Section-->
+    <section class="middle-section">
+      <div class="handmade-header" id="handmade-header">
+        <div class="handmade-title">Handmade
+          headwraps and scarves</div>
+        <div class="item-description">
+          Made with organic cotton, non-toxic dyes and lots of love. Customly dyed
+          so each one is a little different-but thats what makes them special, just
+          like all of us that dare to stand out at any time of day. We are the
+          skies. Made with 100% organic cotton, non-toxic dyes and lots of love.
+        </div>
+      </div>
+    </section>
+    <div class="color-block"></div>
+
+    <!--slideshow text container-->
+    <div class="slideshow-title">
+      <h1>Featured Items</h1>
+      <h3>Inspired by the skies</h3>
+      <p>nous sommes les cieux</p>
+    </div>
+   
+    <!-- Slideshow container -->
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img class="product-pic" src="../img/sunrise.png" />
+          <div class="caption-text">sunrise $15</div>
+         </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img class="product-pic" src="../img/daylight.png" />
+          <div class="caption-text">daylight $15</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img class="product-pic" src="../img/sunset.png" />
+          <div class="caption-text">sunset $15</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img class="product-pic" src="../img/midnight-sky.png" />
+          <div class="caption-text">midnight-skies $15</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img class="product-pic" src="../img/full-setEDITED.png" />
+          <div class="caption-text">Caption Five</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+    </section>
+    <!-- The dots/circles -->
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="coupon-offer">
+      Subscribe for 10% off first order
+      <div class="user-input">
+        <div class="text-input-box">Your email here</div>
+        <div class="subscribe-button">subscribe</div>
+      </div>
+    </div>
+
+    <!--tutorials page-->
+    <header class="tutorials-title">
+      <h1>Tutorials</h1>
+    </header>
+    <div class="tutorials-grid-flex">
+      <main class="tutorials-grid">
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-1">
+            <img
+              class="grid-pic"
+              src="img/step1.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-2">
+            <img
+              class="grid-pic"
+              src="img/step2.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-3">
+            <img
+              class="grid-pic"
+              src="img/step3.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-1">
+            <p>Step 1<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-2">
+            <p>Step 2<br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-3">
+            <p>Step 3<br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-4">
+            <img
+              class="grid-pic"
+              src="img/step4.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-5">
+            <img
+              class="grid-pic"
+              src="img/step5.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="tutorial-image-6">
+            <img
+              class="grid-pic"
+              src="img/step6.jpg"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-4">
+            <p>Step 4<br>
+            Lorem ipsum dolor sit amet.</p>
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-5">
+            <p>Step 5<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+          </div>
+        </section>
+        <section class="tutorials-grid-item">
+          <div class="step-6">
+            <p>Voila!<br>
+        
+              Lorem ipsum dolor sit amet,sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!--return to top link-->
+    <!-- responsive tutorials slide show-->
+    <section class="tutorials-slideshow-flex">
+      <div class="tutorials-slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <div class="tutorial-image-2">
+            <img class="steps-pic" src="img/step1.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 1</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <div class="tutorial-image-2">
+            <img class="steps-pic" src="img/step2.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 2</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <div class="tutorial-image-3">
+            <img class="steps-pic" src="img/step3.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 3</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <div class="tutorial-image-4">
+            <img class="steps-pic" src="img/step4.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 4</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <div class="tutorial-image-5">
+            <img class="steps-pic" src="img/step5.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 5</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <div class="tutorial-image-6">
+            <img class="steps-pic" src="img/step6.jpg" width="100%" />
+          </div>
+          <div class="caption-text">Step 6</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <div style="text-align: center;">
+        <span class="dot-2" onclick="currentSlide(1)"></span>
+        <span class="dot-2" onclick="currentSlide(2)"></span>
+        <span class="dot-2" onclick="currentSlide(3)"></span>
+        <span class="dot-2" onclick="currentSlide(4)"></span>
+        <span class="dot-2" onclick="currentSlide(5)"></span>
+        <span class="dot-2" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+    <!--about page-->
+    <div class="what-were-made-of">What We're Made Of</div>
+    <section class="grid-container">
+      <div class="flex-img">
+        <img class="about-process-png" src="/img/shibori-dye.jpg" width=100%>
+        <h2 class="process">Process</h2>
+      </div>
+      <div class="flex-img">
+        <img src="">
+        <h2 class="coming-soon">coming-soon</h2>
+      </div>
+      <div class="flex-img">
+        <img class="about-artist-png" src="/img/about-artist.png" width=100%>
+        <h2 class="about-artist">about artist</h2>
+      </div>
+    </section>
+    <!--Explainaition company Name-->
+    <section class="je-suis-container">
+      <div class="je-suis" id="pink-middle-section">
+        <div class="our-name-means">
+          The name of the company is called "Tetue" which translates to
+          "headstrong" in french. Many connotations surrounding the word tend to
+          be negative but we see it as a definititon to describe
+          <span class="definition">"those that follow their own ideas rather than listen to others."</span>
+        </div>
+        <div class="je-suis-header">je suis t&#234;tue.</div>
+      </div>
+    </section>
+    <div class="color-block2"></div>
+    <!--footer-->
+    <footer class="tetue-footer">
+      <div class="footer-social-media-icons">
+        <ul>
+          <li><img src="img/gmailLogo.png"width="55%" height="70%"></li>
+          <li><img src="img/instaLogo-2.png"width="55%" height="70%"></li>
+          <li><img src="img/facebookLogo.png"width="55%" height="70%"></li>
+          <li><img src="img/youtubeLogo.png"width="55%" height="70%"></li>
+        </ul>
+      </div>
+    
+      <div class="footer-nav">
+        <ul>
+          <li>home</li>
+          <li>shop</li>
+          <li>tutorial</li>
+          <li>about</li>
+          <li>resources</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="tetue-footer-title">Tetue headwraps</div>
+      <div class="tetue-copyright">©Copyright 2015-2020</div>
+      <div class="tetue-all-rights">all rights reserved</div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
